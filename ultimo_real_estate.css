@@ -1,0 +1,266 @@
+﻿* {
+font-size: 100%;
+border-style: none;
+list-style-type: none;
+box-sizing: border-box;
+}
+
+body {
+font-family: helvetica, calibri, sans-serif;
+background-color: #f6f7fb;
+color: #273149;
+}
+
+/* Homepage Slideshow Start */
+.ultimoslideshow {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+
+.estateslides {
+	display: none;
+}
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 45%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+	background-color: black;
+}
+
+.slidecaption {
+	color: black;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+.numbertext {
+	color: white;
+	font-size: 12px;
+	padding: 15px 15px;
+	position: absolute;
+	top: 0;
+	text-shadow: 1px 1px black;
+}
+
+.dot {
+	cursor: pointer;
+	height: 10px;
+	width: 10px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+	background-color: #717171;
+}
+
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	-moz-animation-name: fade;
+	-moz-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+}
+
+@keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+}
+/* Homepage Slideshow End */
+
+/* FAQ Start */
+.accordion {
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	outline: none;
+}
+/* FAQ End */
+
+/* Contact Form Start */
+#fname, #phone, #emaila {
+	width: 75%;
+}
+/* Contact Form End */
+
+#wrapper {
+width: 1300px;
+margin: 20px auto;
+}
+
+nav {
+margin-top: 8px;
+}
+
+nav ul {
+width: 1250px;
+margin: auto;
+display: flex;
+justify-content: space-between;
+}
+
+nav a {
+font-size: 30px;
+color: #273149;
+text-decoration: none;
+}
+
+#current {
+color: #998a0c;
+}
+
+main {
+width: 1250px;
+margin: auto;
+margin-top: 40px;
+justify-content: space-between;
+display: flex;
+}
+
+section {
+width: 45%;
+}
+
+h1 {
+font-size: 34px;
+}
+
+h2 {
+font-size: 28px;
+margin-top: 5px;
+}
+
+section ul {
+margin-top: 20px;
+line-height: 1.5em;
+}
+
+figure {
+width: 990px;
+margin: auto;
+margin-top: 40px;
+}
+
+#col1 img, iframe {
+	margin-top: 40px;
+}
+
+form {
+	margin-top: 30px;
+	background-color: #eee;
+	padding: 10px 0px 30px 100px;
+}
+
+fieldset {
+	margin-top: 30px;
+	font-weight: bold;
+}
+
+fieldset div {
+	display: flex;
+}
+
+label {
+	display: block;
+	margin-top: 10px;
+	margin-right: 4px;
+	font-weight: normal;
+}
+
+input {
+	border: 1px solid #273149;
+	margin-top: 4px;
+	margin-right: 10px;
+}
+
+form p {
+	margin-top: 4px;
+	font-size: 12px;
+}
+
+#name, #mobile, #email {
+	width:340px;
+}
+
+#radio {
+	align-items: baseline;
+}
+
+#checkbox {
+	align-items: baseline;
+	margin-bottom: 20px;
+	}
+
+select {
+	margin-top: 12px;
+	margin-bottom: 22px;
+	margin-left: -4px;  /* ICK */
+	background-color: transparent;
+}
+
+textarea {
+	font-family: helvetica, calibri, sans-serif;
+	margin-top: 10px;
+	max-width:340px;
+	min-width:340px;
+	border: 1px solid #273149;
+}
+
+input[type=submit] {
+	display: block;
+	margin-top: 20px;
+	padding: 2px 8px;
+}
+
+footer {
+width: 620px;
+margin: auto;
+margin-top: 40px;
+}
+
+footer ul {
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+footer a {
+color: #273149;
+text-decoration: none;
+}
+
+
+

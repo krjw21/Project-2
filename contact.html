@@ -1,0 +1,124 @@
+﻿<!doctype html>
+<!-- Contact Us Form -->
+
+<html lang="en">
+
+<head>
+  <!-- META Tag to reduce XSS vulnerability -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  <title> Ultimo Real Estate - Contact </title>
+  <meta name="author" content="Richard Kim - richard.kimmorley8@studytafensw.edu.au">
+  <link rel="stylesheet" href="ultimo_real_estate.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <header>
+      <img src="images/ultimo_real_estate_logo.png" width="625" height="160"
+        alt="Ultimo Real Estate, Sydney, Australia">
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="property.html">Property of the Week</a></li>
+        <li><a href="buy_sell_rent.html">Buy-Sell-Rent</a></li>
+        <li><a href="agents.html">Agents</a></li>
+        <li><a href="suburb_profile.html">Suburb Profile</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html" id="current">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+      <section id="col1">
+        <h1>Contact</h1>
+
+        <ul>
+          <li><strong>Ultimo Real Estate</strong></li>
+          <li>20 Jones Street</li>
+          <li>ULTIMO NSW 2007</li>
+        </ul>
+
+        <ul>
+          <li><strong>Mob: +61 123 456 789</strong></li>
+          <li>Tel: +612 1234 5678</li>
+          <li>info@ultimorealestate.com.au</li>
+        </ul>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6624.85817291638!2d151.19285829205285!3d-33.87860141454631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae2f6b3e5fb7%3A0xf97500fd5776ca34!2sJones%20St%2C%20Sydney%20NSW!5e0!3m2!1sen!2sau!4v1581408180870!5m2!1sen!2sau"
+          width="570" height="500" allowfullscreen=""></iframe>
+      </section>
+
+      <section id="col2">
+        <h2>Property Enquiry</h2>
+        <div class="container">
+          <form id="contactForm" name="contactForm" action="action_page.php"
+            onsubmit="return validateForm()" method="post">
+
+            <h3>Personal Information</h3>
+
+            <!-- CSRF Token generation to prevent CSRF vulnerabilities -->
+            <input type="hidden" name="csrf-token" value="CIwNZNlR4XbisJF39I8yWnWX9wX4WFoz" />
+
+            <label for="fname">Full Name* :</label>
+            <input type="text" id="fname" name="fullname">
+
+            <label for="phone">Phone Number* :</label>
+            <input type="text" id="phone" name="phonenumber" placeholder="E.g. 0000111222 OR 00001111">
+
+            <label for="emaila">Email* :</label>
+            <input type="email" id="emaila" name="emailaddress">
+            <p>* = required fields</p>
+            <br>
+
+            <h3>Do you want to Buy or Sell or Rent?</h3>
+            Buy: <input type="radio" id="buy" name="buysellrent" value="buy">
+            Sell: <input type="radio" id="sell" name="buysellrent" value="sell">
+            Rent: <input type="radio" id="rent" name="buysellrent" value="rent">
+            <br><br><br>
+
+            <h3>What property type(s) are you interested in?</h3>
+            Unit: <input type="checkbox" id="estate1" name="estate" value="unit">
+            Townhouse: <input type="checkbox" id="estate2" name="estate" value="townhouse">
+            House: <input type="checkbox" id="estate3" name="estate" value="house">
+            <br><br>
+
+            <label for="bedroom">How many bedrooms do you require?</label>
+            <input type="number" id="bedroom" name="bedroomnumber">
+
+            <label for="subject">Comments</label>
+            <textarea id="subject" name="subject" style="height:200px"></textarea>
+
+            <input type="submit" value="Submit Enquiry">
+
+          </form>
+        </div>
+        <script src="ultimo_real_estate.js"></script>
+      </section>
+
+    </main>
+
+    <footer>
+      <ul>
+        <li>&copy; Ultimo Real Estate 2021</li>
+        <li><a href="www.facebook.com/UltimoRealEstate"><img src="images/facebook.png" width="30" height="30"
+              alt="Ultimo Real Estate on Facebook"></a></li>
+        <li><a href="www.instagram.com/UltimoRealEstate"><img src="images/instagram.png" width="30" height="30"
+              alt="Ultimo Real Estate on Instagram"></a></li>
+        <li><a href="www.twitter.com/UltimoRealEstate"><img src="images/twitter.png" width="30" height="30"
+              alt="Ultimo Real Estate on Twitter"></a></li>
+        <li><a href="legals.html">Legals</a></li>
+      </ul>
+    </footer>
+
+  </div>
+</body>
+
+</html>

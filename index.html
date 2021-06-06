@@ -1,0 +1,89 @@
+﻿<!doctype html>
+<!-- Slideshow Gallery -->
+
+<html lang="en">
+
+<head>
+  <!-- META Tag to reduce XSS vulnerability -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  <title> Ultimo Real Estate - Home </title>
+  <meta name="author" content="Richard Kim - richard.kimmorley8@studytafensw.edu.au">
+  <link rel="stylesheet" href="ultimo_real_estate.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <header>
+      <img src="images/ultimo_real_estate_logo.png" width="625" height="160"
+        alt="Ultimo Real Estate, Sydney, Australia">
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html" id="current">Home</a></li>
+        <li><a href="property.html">Property of the Week</a></li>
+        <li><a href="buy_sell_rent.html">Buy-Sell-Rent</a></li>
+        <li><a href="agents.html">Agents</a></li>
+        <li><a href="suburb_profile.html">Suburb Profile</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="ultimoslideshow">
+
+        <div class="estateslides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="images/bulwara_road.jpg" style="width:100%" alt="Bulwara Road">
+          <div class="slidecaption">Bulwara Road</div>
+        </div>
+
+        <div class="estateslides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="images/fig_street.jpg" style="width:100%" alt="Bulwara Road">
+          <div class="slidecaption">Fig Street</div>
+        </div>
+
+        <div class="estateslides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="images/jones_street.jpg" style="width:100%" alt="Bulwara Road">
+          <div class="slidecaption">Jones Street</div>
+        </div>
+        <br>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+      </div>
+
+      <script src="ultimo_real_estate.js"></script>
+    </main>
+
+    <footer>
+      <ul>
+        <li>&copy; Ultimo Real Estate 2021</li>
+        <li><a href="www.facebook.com/UltimoRealEstate"><img src="images/facebook.png" width="30" height="30"
+              alt="Ultimo Real Estate on Facebook"></a></li>
+        <li><a href="www.instagram.com/UltimoRealEstate"><img src="images/instagram.png" width="30" height="30"
+              alt="Ultimo Real Estate on Instagram"></a></li>
+        <li><a href="www.twitter.com/UltimoRealEstate"><img src="images/twitter.png" width="30" height="30"
+              alt="Ultimo Real Estate on Twitter"></a></li>
+        <li><a href="legals.html">Legals</a></li>
+      </ul>
+    </footer>
+
+  </div>
+</body>
+
+</html>
