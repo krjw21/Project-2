@@ -10,7 +10,8 @@
   <title> Ultimo Real Estate - Contact </title>
   <meta name="author" content="Richard Kim - richard.kimmorley8@studytafensw.edu.au">
   <link rel="stylesheet" href="ultimo_real_estate.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
 </head>
 
 <body>
@@ -19,11 +20,11 @@
 
     <header>
       <img src="images/ultimo_real_estate_logo.png" width="625" height="160"
-        alt="Ultimo Real Estate, Sydney, Australia">
+        alt="Ultimo Real Estate, Sydney, Australia" class="header">
     </header>
 
     <nav>
-      <ul>
+      <ul class="navbar" id="myNavbar">
         <li><a href="index.html">Home</a></li>
         <li><a href="property.html">Property of the Week</a></li>
         <li><a href="buy_sell_rent.html">Buy-Sell-Rent</a></li>
@@ -57,7 +58,7 @@
       </section>
 
       <section id="col2">
-        <h2>Property Enquiry</h2>
+        <h2 class="contactHeader">Property Enquiry</h2>
         <div class="container">
           <form id="contactForm" name="contactForm" action="action_page.php"
             onsubmit="return validateForm()" method="post">
@@ -82,7 +83,7 @@
             Buy: <input type="radio" id="buy" name="buysellrent" value="buy">
             Sell: <input type="radio" id="sell" name="buysellrent" value="sell">
             Rent: <input type="radio" id="rent" name="buysellrent" value="rent">
-            <br><br><br>
+            <br><br>
 
             <h3>What property type(s) are you interested in?</h3>
             Unit: <input type="checkbox" id="estate1" name="estate" value="unit">

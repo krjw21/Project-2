@@ -1,3 +1,13 @@
+/* CSS Website Responsiveness */
+function navResponse() {
+    var x = document.getElementById("myNavbar");
+    if (x.className === "navbar") {
+      x.className += " responsive";
+    } else {
+      x.className = "navbar";
+    }
+  }
+
 /* ----- Homepage Slideshow Start ----- */
 var slideIndex = 1;
 
